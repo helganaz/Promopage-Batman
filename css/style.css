@@ -1,0 +1,455 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  /* прижимаем footer */
+  height: 100%;
+  /* это для  того, чтобы 1 rem = 10px */
+  font-size: 62.5%;
+}
+
+/* прижимаем footer */
+.body-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================== */
+@font-face {
+  font-family: "Museo Sans Cyrl 700";
+  src: url("../fonts/");
+  src: local("MuseoSansCyrl-700"),
+    url("../fonts/?#iefix") format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl-700.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* ============================ */
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 153px;
+    padding-right: 153px;
+  }
+}
+/* =========================== */
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.1;
+  color: #fff;
+}
+
+/* ============================= */
+.header {
+  position: absolute;
+  top: 6.4rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4.7rem;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 7.9rem;
+  height: 2.9rem;
+  margin-right: 3.9rem;
+}
+
+.header__nav a:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.header__socials {
+  display: flex;
+}
+
+.header__socials-icon {
+  width: 1.7rem;
+  height: 1.6rem;
+}
+
+.header__socials a:not(:first-child) {
+  margin-left: 2rem;
+}
+/* =========================== */
+html {
+  background-image: url("../img/background-1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+.main {
+  /* прижимаем footer */
+  flex: 1 1 auto;
+}
+
+.main__container {
+  padding-top: 18.7rem;
+  padding-bottom: 10.4rem;
+}
+
+.raiting__title {
+  margin-bottom: 1.6rem;
+}
+
+.raiting__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.raiting__stars {
+  display: flex;
+  align-items: center;
+}
+
+.raiting__star {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.raiting__star:not(:last-child) {
+  margin-right: 0.4rem;
+}
+
+.raiting__score {
+  font-size: 1.2rem;
+  line-height: 1.17;
+  margin-left: 0.9rem;
+}
+
+.main__title {
+  font-family: Museo Sans Cyrl;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7.6rem;
+  line-height: 1.2;
+
+  margin-bottom: 0.8rem;
+}
+
+.main__description-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main__discription {
+  max-width: 52.8rem;
+  line-height: 1.5;
+  margin-bottom: 4.1rem;
+}
+
+.main__button-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 315px; */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #151515;
+  border: 16px solid #391917;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.main__button-play img {
+  width: 35px;
+  height: 40px;
+}
+
+.main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 24.5rem;
+  padding: 2.2rem 7.2rem;
+  margin-bottom: 8.8rem;
+  background-color: #151515;
+  border-radius: 8px;
+
+  font-weight: 700;
+}
+
+.main__slider-wrap {
+  max-width: 41.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.main__slider-slide {
+  position: relative;
+  width: 16.4rem;
+  height: 10.5rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.main__slider-slide span {
+  position: absolute;
+  left: 1.2rem;
+  bottom: 0.6rem;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.main__slider-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__slider-arrow {
+  width: 3.2rem;
+  height: 2.2rem;
+  margin-left: 2.8rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* =========================== */
+.footer {
+  background-color: #030102;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer__copy {
+  line-height: 1.43;
+  opacity: 0.4;
+}
+
+.footer__menu {
+  display: flex;
+  align-items: center;
+  line-height: 1.43;
+  opacity: 0.4;
+}
+
+.footer__menu li:not(:first-child) {
+  margin-left: 2.5rem;
+}
+/* ==================== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 3rem 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal__inner {
+  width: 700px;
+  height: 500px;
+}
+
+.modal.active {
+  display: flex;
+}
+/* ===================== */
+.menu-toggle-open {
+  display: none;
+}
+
+.menu-container {
+  position: fixed;
+  top: -64px;
+  left: 0px;
+  width: 250px;
+  height: 263px;
+  padding: 40px;
+  background-color: #151515;
+  z-index: 50;
+
+  transform: translateX(100%);
+  transition: transform 250ms linear;
+  display: none;
+}
+
+.menu-container.is-open {
+  display: block;
+  transform: translateX(0);
+}
+
+.menu-toggle-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  min-width: 40px;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.mobile-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu__socials {
+  display: flex;
+}
+
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Стили для mobile */
+@media screen and (max-width: 767px) {
+  html {
+    background-position-x: 65%;
+  }
+
+  .header__menu,
+  .header__nav,
+  .header__socials {
+    display: none;
+  }
+
+  .menu-toggle-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    min-width: 40px;
+    background-color: transparent;
+  }
+
+  .main__container {
+    padding-top: 18.7rem;
+    padding-bottom: 3.8rem;
+  }
+
+  .main__title {
+    font-family: Museo Sans Cyrl;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.6rem;
+    line-height: 1.2;
+  }
+
+  .main__description-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main__discription {
+    max-width: 80%;
+  }
+
+  .main__button-play {
+    margin-left: 0;
+    margin-bottom: 4.4rem;
+  }
+
+  .main__button {
+    margin-bottom: 4.4rem;
+  }
+
+  .main__slider-wrap {
+    max-width: 21.5rem;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__copy {
+    margin-bottom: 0.8rem;
+  }
+
+  .modal__inner {
+    width: 300px;
+    height: 200px;
+  }
+}
