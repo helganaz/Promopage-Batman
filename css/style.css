@@ -321,6 +321,10 @@ body {
   display: none;
 }
 
+.icon-burger {
+  fill: #fff;
+}
+
 .menu-container {
   position: fixed;
   top: 0px;
@@ -389,7 +393,7 @@ body {
 /* Стили для mobile */
 @media screen and (max-width: 767px) {
   .body-wrapper {
-    background-position-x: 64%;
+    background-position-x: 61%;
   }
 
   .header__container {
